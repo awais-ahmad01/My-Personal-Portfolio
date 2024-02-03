@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-* {
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: "Poppins", sans-serif;
   color: white;
+  box-sizing: border-box;
 }
 
 .main-header {
@@ -15,36 +13,52 @@ body {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  height: 5rem;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.main-header nav ul {
+.main-header nav {
   display: flex;
-  padding: 1.8rem 3.7rem;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3rem;
 }
 
-.main-header nav ul li {
-  padding: 0 1.56rem;
+.menu ul {
+  display: flex;
+  gap: 3.5rem;
+  /* padding: 1.8rem 3.7rem; */
+  padding: 0;
+}
+
+.menu ul li {
+  /* padding: 0 1.56rem; */
   list-style: none;
 }
 
-.main-header nav ul li a {
+.menu ul li a {
   text-decoration: none;
   color: white;
 }
 
-.main-header nav ul li a:hover {
+.menu ul li a:hover {
   text-decoration: underline;
 }
 
 .logo {
-  padding: 1.25rem 3.75rem;
-  font-size: 1.5rem;
+  padding: 0 3rem;
+  font-size: 0.8rem;
   font-weight: bold;
+}
+
+.hams {
+  display: none;
+}
+
+.cross {
+  display: none;
 }
 
 main {
@@ -53,18 +67,24 @@ main {
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5.2rem;
 }
 
 .intro {
-  /* width: 50%; */
-  margin-top: 13rem;
-  margin-left: 5.25rem;
+  width: 50%;
+  padding-left: 5.25rem;
 }
 
 .hello {
-  font-size: 1.56rem;
+  font-size: 1.7rem;
   padding-left: 7.5rem;
+}
+
+.hello p {
+  margin: 0;
+  padding: 0;
 }
 
 .name {
@@ -73,8 +93,18 @@ main {
   font-weight: bold;
 }
 
+.name p {
+  margin: 0;
+  padding: 0;
+}
+
 .profession {
   opacity: 0.2;
+}
+
+.profession p {
+  margin: 0;
+  padding: 0;
 }
 
 .buttons {
@@ -112,11 +142,11 @@ main {
 }
 
 .pic {
-  margin-top: 2.25rem;
+  width: 50%;
 }
 
 .pic img {
-  width: 30rem;
+  width: 100%;
 }
 
 .porfolio-content {
@@ -128,12 +158,17 @@ main {
   font-size: 2.5rem;
 }
 
+.portfolio-imgs {
+  padding: 2.8rem 3.7rem 6.2rem 3.7rem;
+}
+
 .portfolio-list {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 2.8rem;
   grid-row-gap: 1.5rem;
-  margin: 2.8rem 3.7rem 6.2rem 4.3rem;
+  justify-content: center;
+  padding: 0;
 }
 
 .portfolio-list li {
@@ -151,11 +186,13 @@ main {
   font-weight: 400;
   opacity: 0.7;
   padding-bottom: 0.6rem;
+  margin: 0;
 }
 
 .portfolio-list li p {
   opacity: 0.7;
   font-size: 0.65rem;
+  margin: 0;
 }
 
 .wbd img {
@@ -191,7 +228,8 @@ main {
 
 .about-section {
   background-image: linear-gradient(45deg, #363d73, #2794b3);
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  padding-top: 50px;
 }
 
 .about-me {
@@ -219,11 +257,11 @@ main {
 }
 
 .services-list {
-  grid-row-gap: 30px;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 45px;
-  padding: 80px;
+  grid-row-gap: 30px;
+  padding: 50px;
   padding-top: 45px;
 }
 
@@ -243,12 +281,15 @@ main {
   font-weight: lighter;
   color: #363d73;
   letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
 }
 
 .service-card p {
   text-align: center;
   font-size: 14px;
   padding-top: 22px;
+  margin: 0;
 }
 
 .icon {
@@ -264,108 +305,109 @@ main {
   align-items: center;
 }
 
-.contact-me{
+.contact-me {
   margin-top: 80px;
 }
 
-.contact-me h1{
+.contact-me h1 {
   text-align: center;
   padding-bottom: 45px;
   padding-top: 55px;
   font-size: 38px;
+  margin: 0;
 }
 
-.contact-form{
+.contact-form {
   display: flex;
+  padding: 0 75px 45px 75px;
+  gap: 95px;
 }
 
-.get-in-touch{
+.get-in-touch {
   display: flex;
   flex-direction: column;
-padding: 0 95px 45px 75px;
   width: 35%;
 }
 
-.get-in-touch h2{
+.get-in-touch h2 {
   padding-bottom: 25px;
   font-weight: lighter;
   font-size: 23px;
+  margin: 0;
 }
 
-
-.form-input{
+.form-input {
   margin-bottom: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.form-textarea{
+.form-textarea {
   margin-bottom: 26px;
-
 }
 
-.form-btn{
+.form-btn {
   background-color: #35a99c;
   border: 2px solid #35a99c;
   border-radius: 4px;
   padding: 9px;
   color: white;
-
 }
 
-.form-btn:hover{
+.form-btn:hover {
   background-color: white;
   color: #35a99c;
 }
 
-.contact-details{
-
+.contact-details {
 }
 
-.contact-details h2{
+.contact-details h2 {
   padding-bottom: 20px;
   font-weight: lighter;
   font-size: 23px;
+  margin: 0;
 }
 
-.contact-details h3{
+.contact-details h3 {
   padding-bottom: 20px;
   font-size: 14px;
+  margin: 0;
 }
 
-.contact-details p{
+.contact-details p {
   padding-bottom: 20px;
-
+  margin: 0;
 }
 
-
-.footer-section{
+.footer-section {
   background-color: black;
-  padding: 50px 0;
+  padding: 50px 35px;
 }
 
-.footer-section p{
+.footer-section p {
   text-align: center;
   padding-bottom: 48px;
   font-weight: bolder;
+  margin: 0;
 }
 
-.icons{
+.icons {
   text-align: center;
-
 }
 
-.icons ul{
+.icons ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
 
-.icons ul li{
+.icons ul li {
   display: flex;
-  margin: 0 15px;
   background-color: #35a99c;
   height: 50px;
   width: 50px;

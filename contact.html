@@ -13,90 +13,109 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/responsive.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="main-header">
       <div class="logo">
-        <p>Awais Ahmad</p>
+        <h1>Awais Ahmad</h1>
       </div>
 
       <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./contact.html">Contact Me</a></li>
-        </ul>
+        <div class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="hamburger-icons">
+          <i class="fa-solid fa-bars hams"></i>
+
+          <i class="fa-solid fa-xmark cross"></i>
+        </div>
       </nav>
     </header>
-
     <main>
-        <div class="contact-me">
-            <h1>Contact Me</h1>
-            <div class="contact-form">
-                <div class="get-in-touch">
-                    <h2>Get in Touch</h2>
-                    <input type="text" placeholder="Your Name" class="form-control form-input">
+      <div class="contact-me">
+        <h1>Contact Me</h1>
+        <div class="contact-form">
+          <div class="get-in-touch">
+            <h2>Get in Touch</h2>
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="form-control form-input"
+            />
 
-                    <input type="email" placeholder="Your Email" class="form-control form-input">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="form-control form-input"
+            />
 
-                    <input type="text" placeholder="Your Phone" class="form-control form-input">
+            <input
+              type="text"
+              placeholder="Your Phone"
+              class="form-control form-input"
+            />
 
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="write your message" class="form-control form-textarea">
-                    </textarea>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="write your message"
+              class="form-control form-textarea"
+            >
+            </textarea>
 
-                    <button class="form-btn">Send Message</button>
+            <button class="form-btn">Send Message</button>
+          </div>
 
-                </div>
+          <div class="contact-details">
+            <h2>My Contact Details</h2>
 
-                <div class="contact-details">
-                    <h2>My Contact Details</h2>
-                    
-                    <h3>Email</h3>
-                    <p>example@gmail.com</p>
+            <h3>Email</h3>
+            <p>example@gmail.com</p>
 
-                    <h3>Phone</h3>
-                    <p>+923149467803</p>
+            <h3>Phone</h3>
+            <p>+923149467803</p>
 
-                    <h3>Fax</h3>
-                    <p>+923149467803</p>
+            <h3>Fax</h3>
+            <p>+923149467803</p>
 
-                    <h3>Address</h3>
-                    <p>San Francisco, CA</p>
-                    <p>4th Floor8 Lower</p>
-                    <p>San Francisco street, M1 50F</p>
-                </div>
-
-            </div>
+            <h3>Address</h3>
+            <p>San Francisco, CA</p>
+            <p>4th Floor8 Lower</p>
+            <p>San Francisco street, M1 50F</p>
+          </div>
         </div>
-     
+      </div>
     </main>
 
     <footer>
-        <div class="footer-section">
+      <div class="footer-section">
+        <p>
+          Copyright &copy; 2023 All rights reserved | This portfolio website
+          template is created by GeeksforGeeks.
+        </p>
 
-            <p>Copyright &copy; 2023 All rights reserved | This portfolio website template is created by GeeksforGeeks.</p>
-            
+        <div class="icons">
+          <ul>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
 
+            <li><i class="fa-brands fa-x-twitter"></i></li>
 
-            <div class="icons">
-                <ul>
-                    <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
 
-                    <li><i class="fa-brands fa-x-twitter"></i></li>
-
-                    <li><i class="fa-brands fa-instagram"></i></li>
-
-                    <li><i class="fa-brands fa-linkedin-in"></i></li>
-                </ul>
-
-                
-
-        
-            </div>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+          </ul>
         </div>
+      </div>
     </footer>
   </body>
 </html>
